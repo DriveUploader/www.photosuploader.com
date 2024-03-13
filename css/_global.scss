@@ -1,0 +1,45 @@
+a { color: inherit; text-decoration: none; transition: $transition; }
+a:hover { color: $color-primary; }
+body { color: $color-text; display: flex; flex-direction: column; font: 1rem/1.2 $font; display: flex; flex-direction: column; min-height: 100vh; 
+	&.no-scroll { overflow: hidden; }
+}
+button { color: inherit; font: 1rem $font; transition: $transition; 
+	&:not([disabled]) { cursor: pointer; }
+}
+h1,.h1 { font: 500 3.5rem/1.2 $font; }
+h2,.h2 { font: 500 2.625rem/1.2 $font; }
+h3,.h3 { font: 500 1.5rem/1.2 $font; }
+h4,.h4 { font: 500 1.25rem/1.2 $font; }
+h5,.h5 { font: 500 1rem/1.2 $font; }
+html { scroll-behavior: smooth; }
+img { max-width: 100%; }
+input { color: $color-text; font: 1rem/1 $font; padding: 0.5rem 1.5rem;
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button { -webkit-appearance: none; appearance: none; margin: 0; }
+	&[type=number] { -moz-appearance: textfield; appearance: textfield; }
+	&::placeholder { color: $color-text; opacity: 0.3; }
+}
+label { cursor: pointer; }
+main { display: flex; flex-direction: column; flex-grow: 1; }
+small { font-size: .75em; }
+textarea { color: $color-text; cursor: pointer; font: 1rem/1 $font; padding: 0.5rem 1.5rem;
+	&::placeholder { color: $color-text; opacity: 0.3; }
+}
+@media (max-width: $screen-xl) { 
+	h1,.h1 { font-size: 3rem; }
+	h2,.h2 { font-size: 2.25rem; }
+}
+@media (max-width: $screen-lg) { 
+	html { font-size: 14px; }
+}
+@media (max-width: $screen-md) { 
+	h1,.h1 { font-size: 2.5rem; }
+	h2,.h2 { font-size: 2rem; }
+}
+@media (max-width: $screen-xs) { 
+	h1,.h1 { font-size: 2.25rem; }
+	h2,.h2 { font-size: 1.75rem; }
+	html { font-size: 13px; }
+	input { padding: 0.5rem 1rem; }
+	textarea { padding: 0.5rem 1rem; }
+}

@@ -1,0 +1,45 @@
+$color-background: #f6f8fa;
+$color-black: #000;
+$color-danger: #dd1144;
+$color-gray-border: #d6dce6;
+$color-gray-dark: #424242;
+$color-gray-light: #f1f1f1;
+$color-gray: #898989;
+$color-green: #00b576;
+$color-info: #a1acb7;
+$color-orange: #e25041;
+$color-pink: #ca48a1;
+$color-primary-dark: #0060df;
+$color-primary-light: #77a7f9;
+$color-primary: #327AF7;
+$color-red: #cf3510;
+$color-success: #39b54a;
+$color-turquoise: #2fd098;
+$color-warning: #ff905e;
+$color-white: #fff;
+$color-yellow-dark: #f3c246;
+$color-yellow: #ffd059;
+
+$color-text-light: #4c4e50;
+$color-text: #2d2f32;
+
+$container: 1120px;
+
+$gradient: linear-gradient(110deg,$color-primary,$color-primary-dark);
+$gradient--green: linear-gradient(110deg,$color-green,$color-turquoise);
+$gradient--purple: linear-gradient(110deg,$color-primary-dark,$color-pink);
+$gradient--yellow: linear-gradient(110deg,$color-yellow,$color-yellow-dark);
+
+$font: 'OpenSans', sans-serif, Arial;
+
+$screen-xs: 400px;
+$screen-sm: 575px;
+$screen-md: 767px;
+$screen-lg: 991px;
+$screen-xl: 1199px;
+$screen-2xl: 1399px;
+$screen-3xl: 1999px;
+
+$shadow: 0 0 2rem rgba($color-primary-light,0.15);
+
+$transition: all .25s;

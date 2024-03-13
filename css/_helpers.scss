@@ -1,0 +1,164 @@
+.text-color--green { color: $color-green; }
+.text-color--primary { color: $color-primary; }
+.text-color--red { color: $color-red; }
+
+.nowrap { white-space: nowrap; }
+
+/* Padding */
+
+@for $i from 0 through 10 {
+  .pad-#{$i} { padding: $i*.5rem; }
+}
+@for $i from 0 through 10 {
+  .padx-#{$i} { padding-left: $i*.5rem; padding-right: $i*.5rem; }
+}
+@for $i from 0 through 10 {
+  .pady-#{$i} { padding-top: $i*.5rem; padding-bottom: $i*.5rem; }
+}
+
+@for $i from 0 through 10 {
+  .padb-#{$i} { padding-bottom: $i*.5rem; }
+}
+@for $i from 0 through 10 {
+  .padt-#{$i} { padding-top: $i*.5rem; }
+}
+@for $i from 0 through 10 {
+  .padl-#{$i} { padding-left: $i*.5rem; }
+}
+@for $i from 0 through 10 {
+  .padr-#{$i} { padding-right: $i*.5rem; }
+}
+
+/* pad mobile*/
+
+@for $i from 0 through 10 {
+  .pad-#{$i}-mob {
+		@media (max-width:$screen-lg) { padding: $i*.5rem; }
+	}
+}
+@for $i from 0 through 10 {
+	.padx-#{$i}-mob {
+		@media (max-width:$screen-lg) { padding-left: $i*.5rem; padding-right: $i*.5rem; }
+	}
+}
+@for $i from 0 through 10 {
+  .pady-#{$i}-mob {
+		@media (max-width:$screen-lg) { padding-top: $i*.5rem; padding-bottom: $i*.5rem; }
+	}
+}
+
+@for $i from 0 through 10 {
+  .padb-#{$i}-mob {
+		@media (max-width:$screen-lg) { padding-bottom: $i*.5rem; }
+	}
+}
+@for $i from 0 through 10 {
+  .padt-#{$i}-mob {
+		@media (max-width:$screen-lg) { padding-top: $i*.5rem; }
+	}
+}
+@for $i from 0 through 10 {
+  .padl-#{$i}-mob {
+		@media (max-width:$screen-lg) { padding-left: $i*.5rem; }
+	}
+}
+@for $i from 0 through 10 {
+  .padr-#{$i}-mob {
+		@media (max-width:$screen-lg) { padding-right: $i*.5rem; }
+	}
+}
+
+/* Margin */
+
+@for $i from 0 through 10 {
+  .mar-#{$i} { margin: $i*.5rem; }
+}
+@for $i from 0 through 10 {
+  .marx-#{$i} { margin-left: $i*.5rem; margin-right: $i*.5rem; }
+}
+@for $i from 0 through 10 {
+  .mary-#{$i} { margin-top: $i*.5rem; margin-bottom: $i*.5rem; }
+}
+@for $i from 0 through 10 {
+  .marb-#{$i} { margin-bottom: $i*.5rem; }
+}
+@for $i from 0 through 10 {
+  .mart-#{$i} { margin-top: $i*.5rem; }
+}
+@for $i from 0 through 10 {
+  .marl-#{$i} { margin-left: $i*.5rem; }
+}
+@for $i from 0 through 10 {
+  .marr-#{$i} { margin-right: $i*.5rem; }
+}
+@for $i from 1 through 10 {
+  .mart-#{$i}-minus { margin-top: $i*-.5rem; }
+}
+@for $i from 1 through 10 {
+  .marr-#{$i}-minus { margin-right: $i*-.5rem; }
+}
+@for $i from 1 through 10 {
+  .marb-#{$i}-minus { margin-bottom: $i*-.5rem; }
+}
+@for $i from 1 through 10 {
+  .marl-#{$i}-minus { margin-left: $i*-.5rem; }
+}
+
+/* margin mob */
+
+@for $i from 0 through 10 {
+  .mar-#{$i}-mob { 
+		@media (max-width:$screen-lg) { margin: $i*.5rem; }
+	}
+}
+@for $i from 0 through 10 {
+  .marx-#{$i}-mob { 
+		@media (max-width:$screen-lg) { margin-left: $i*.5rem; margin-right: $i*.5rem; }
+	}
+}
+@for $i from 0 through 10 {
+  .mary-#{$i}-mob { 
+		@media (max-width:$screen-lg) { margin-top: $i*.5rem; margin-bottom: $i*.5rem; }
+	}
+}
+@for $i from 0 through 10 {
+  .marb-#{$i}-mob { 
+		@media (max-width:$screen-lg) { margin-bottom: $i*.5rem; }
+	}
+}
+@for $i from 0 through 10 {
+  .mart-#{$i}-mob { 
+		@media (max-width:$screen-lg) { margin-top: $i*.5rem; }
+	}
+}
+@for $i from 0 through 10 {
+  .marl-#{$i}-mob { 
+		@media (max-width:$screen-lg) { margin-left: $i*.5rem; }
+	}
+}
+@for $i from 0 through 10 {
+  .marr-#{$i}-mob { 
+		@media (max-width:$screen-lg) { margin-right: $i*.5rem; }
+	}
+}
+@for $i from 1 through 10 {
+  .mart-#{$i}-mob-minus { 
+		@media (max-width:$screen-lg) { margin-top: $i*-.5rem; }
+	}
+}
+@for $i from 1 through 10 {
+  .marr-#{$i}-mob-minus { 
+		@media (max-width:$screen-lg) { margin-right: $i*-.5rem; }
+	}
+}
+@for $i from 1 through 10 {
+  .marb-#{$i}-mob-minus { 
+		@media (max-width:$screen-lg) { margin-bottom: $i*-.5rem; }
+	}
+}
+@for $i from 1 through 10 {
+  .marl-#{$i}-mob-minus { 
+		@media (max-width:$screen-lg) { margin-left: $i*-.5rem; }
+	}
+}
+
